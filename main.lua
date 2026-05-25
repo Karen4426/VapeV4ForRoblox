@@ -1,3 +1,4 @@
+
 repeat task.wait() until game:IsLoaded()
 if shared.vape then shared.vape:Uninject() end
 
@@ -77,13 +78,6 @@ local function finishLoading()
 			queue_on_teleport(teleportScript)
 		end
 	end))
-
-	if not shared.vapereload then
-		if not vape.Categories then return end
-		if vape.Categories.Main.Options['GUI bind indicator'].Enabled then
-			vape:CreateNotification('Finished Loading', vape.VapeButton and 'Press the button in the top right to open GUI' or 'Press '..table.concat(vape.Keybind, ' + '):upper()..' to open GUI', 5)
-		end
-	end
 end
 
 if not isfile('newvape/profiles/gui.txt') then
@@ -116,3 +110,4 @@ else
 	vape.Init = finishLoading
 	return vape
 end
+```
