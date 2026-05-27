@@ -195,7 +195,7 @@ run(function()
 	end
 
 	Killaura = vape.Categories.Blatant:CreateModule({
-		Name = 'Killaura',
+		Name = 'KarenKillaura',
 		Function = function(callback)
 			if callback then
 				repeat
@@ -262,7 +262,7 @@ run(function()
 	Range = Killaura:CreateSlider({
 		Name = 'Attack range',
 		Min = 1,
-		Max = 15,
+		Max = 100,
 		Default = 15,
 		Suffix = function(val)
 			return val == 1 and 'stud' or 'studs'
